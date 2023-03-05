@@ -1,6 +1,6 @@
 # Hotell Application 
 
-### Hotell Application a web application built with Flask, which allows users to manage guests and rooms for an event.
+Hotell Application a web application built with Flask, which allows users to manage guests and rooms for an event.
 
 ## Installation
 
@@ -17,21 +17,29 @@ Download the code from Github and cd into location.
 
 
 ## Frontend
+cd into Frontend folder
 ```bash
 docker build -t frontend .
 docker run -d -p 8080:80 frontend
 ```
 
 ## Database
+cd into DB folder
 ```bash
 docker build -t room-service-mysql .
 docker run -d -p 3306:3306 --name room-service-mysql room-service-mysql
 ```
 
-## Backend Services
+## Backend Guests Services
+cd into Backend\guests_service folder
+```bash
+docker build -t guests_service .
+```
+
+## Backend Rooms Services
+cd into Backend\rooms_service folder
 ```bash
 docker build -t rooms_service .
-docker build -t guests_service .
 ```
 
 ## Run Backend Services
