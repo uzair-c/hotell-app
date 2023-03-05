@@ -1,0 +1,9 @@
+FROM node:12-alpine
+
+RUN npm install -g http-server
+
+WORKDIR /app
+
+COPY ./Front /app
+
+CMD [ "http-server", "-p", "80", "-a", "0.0.0.0", "./" ]
