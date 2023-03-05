@@ -1,6 +1,6 @@
 # Hotell Application 
 
-## Hotell Application a web application built with Flask, which allows users to manage guests and rooms for an event.
+### Hotell Application a web application built with Flask, which allows users to manage guests and rooms for an event.
 
 ## Installation
 
